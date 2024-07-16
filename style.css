@@ -39,7 +39,7 @@ body{
  margin-top: 0.5em;
 }
 
-.buttons-value {
+.button-value {
  border: 2px solid #6759ff;
  padding: 1em 2.2em;
  border-radius: 3em;
@@ -51,4 +51,62 @@ body{
 .active{
  background-color: #6759ff;
  color: #ffffff;
+}
+
+#products{
+ display: grid;
+ grid-template-columns: auto auto auto;
+ grid-column-gap: 1.5em;
+ padding: 2em 0;
+}
+
+.card{
+ background-color: #ffffff;
+ max-width: 16em;
+ margin-top: 1em;
+ padding: 1em;
+ border-radius: 5px;
+ box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.68);
+}
+
+.image-container{
+ text-align: center;
+}
+
+img{
+ max-width: 100%;
+ object-fit: contain;
+ height: 15em;
+
+}
+
+.container{
+ padding-top: 1em;
+ color: #110f29;
+}
+
+.container h5{
+ font-weight: 500;
+}
+
+.hide(
+ display: none;
+)
+
+@media screen and (max-width: 720px){
+ img{
+  max-width: 100%;
+  object-fit: contain;
+  height: 16em;
+ }
+
+ .card{
+    max-width: 16em;
+    margin-top: 1em;
+ }
+
+ #products{
+  grid-template-columns: auto auto;
+  grid-column-gap: 1em;
+ }
 }

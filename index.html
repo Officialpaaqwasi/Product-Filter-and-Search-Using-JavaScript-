@@ -16,12 +16,18 @@ rel="stylesheet">
    <button id="search">Search</button>
   </div>
   <div id="buttons">
-   <button class="button-value">All</button>
-   <button class="button-value">Topwear</button>
-   <button class="button-value">Bottomwears</button>
-   <button class="button-value">Jacker</button>
-   <button class="button-value">Watch</button>
+   <button class="button-value" onclick="filterProduct('all')">
+    All</button>
+   <button class="button-value"onclick="filterProduct('Topwear')">
+    Topwear</button>
+   <button class="button-value"onclick="filterProduct('Bottomwear')">
+    Bottomwear</button>
+   <button class="button-value"onclick="filterProduct('Jacker')">
+    Jacker</button>
+   <button class="button-value"onclick="filterProduct('Watch')">
+    Watch</button>
   </div>
+  <div id="products"> </div>
  </div>
  <script src="script.js"></script>
 </body>
